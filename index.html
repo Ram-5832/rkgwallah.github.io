@@ -1,1 +1,340 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKG Wallah Academy | Learn, Grow, Succeed</title>
+    <meta name="description" content="RKG Wallah Academy - Learn programming, computer science and more with online classes and study materials.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f7f9ff;
+            color: #172033;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 2px 12px #00000010;
+        }
+
+        .logo {
+            color: #4338ca;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #263248;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #4338ca;
+        }
+
+        .hero {
+            padding: 85px 7%;
+            background: linear-gradient(135deg, #312e81, #4f46e5, #818cf8);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 54px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #4338ca;
+            padding: 13px 23px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: #facc15;
+            color: #172033;
+        }
+
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #312e81;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 22px;
+            border-radius: 14px;
+            box-shadow: 0 5px 22px #1720330d;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .card .icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #3730a3;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .card a {
+            display: inline-block;
+            color: white;
+            background: #4f46e5;
+            padding: 10px 17px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .about {
+            background: #eef2ff;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: 20px auto 0;
+            line-height: 1.9;
+            color: #475569;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background: #1e1b4b;
+            color: white;
+            padding: 25px 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 13px;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎓 RKG Wallah Academy</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#classes">Live Classes</a>
+        <a href="#notes">Study Material</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <h1>Welcome to RKG Wallah Academy</h1>
+
+        <p>
+            Learn new skills, improve your knowledge and achieve your goals.
+            Start your learning journey with us today!
+        </p>
+
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#classes" class="btn">Live Classes</a>
+    </section>
+
+    <section id="courses">
+        <h2 class="section-title">Our Courses</h2>
+        <p class="section-description">
+            Learn programming and computer science step by step.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>C Programming</h3>
+                <p>Learn programming fundamentals, loops, functions and arrays.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>C++ Programming</h3>
+                <p>Understand C++, OOP concepts and problem-solving techniques.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">☕</div>
+                <h3>Java Programming</h3>
+                <p>Learn Java basics, classes, objects and inheritance.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Start with Python fundamentals and practical coding.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Practice arrays, linked lists, stacks, queues and algorithms.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📘</div>
+                <h3>Computer Science</h3>
+                <p>Study DBMS, operating systems and computer fundamentals.</p>
+                <a href="#contact">Explore Course</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="about">
+        <h2 class="section-title">Live Classes</h2>
+        <p>
+            Join online classes, learn directly from teachers and clear your doubts.
+            Live classes will be available here once the teacher's class link is added.
+        </p>
+
+        <br>
+
+        <a class="btn btn-primary" href="#contact">Class Information</a>
+    </section>
+
+    <section id="notes">
+        <h2 class="section-title">Study Material</h2>
+        <p class="section-description">
+            Notes and learning resources for your studies.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📄</div>
+                <h3>PDF Notes</h3>
+                <p>Study notes and downloadable learning resources.</p>
+                <a href="#contact">View Notes</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Practice Questions</h3>
+                <p>Practice programming questions to improve your skills.</p>
+                <a href="#contact">Start Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About RKG Wallah Academy</h2>
+        <p>
+            RKG Wallah Academy is an educational platform designed to help
+            students learn programming and computer science.
+            Our goal is to make learning simple, accessible and engaging.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Start Your Learning Journey</h2>
+        <p class="section-description">
+            More information about courses, classes and study materials
+            will be added soon.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p><strong>RKG Wallah Academy</strong></p>
+    <p>Learn Today, Lead Tomorrow.</p>
+    <p>© 2026 RKG Wallah Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
